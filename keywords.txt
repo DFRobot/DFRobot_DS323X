@@ -1,0 +1,68 @@
+#######################################
+# Syntax Coloring DFRobot_CCS811
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DFRobot_DS323X	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getYear	KEYWORD2
+getMonth	KEYWORD2
+getDate	KEYWORD2
+getHour	KEYWORD2
+getMinute	KEYWORD2
+getSecond	KEYWORD2
+getDayOfWeek	KEYWORD2
+getTemperatureC	KEYWORD2
+getCompileTime	KEYWORD2
+isLostPower	KEYWORD2
+readSqwPinMode	KEYWORD2
+writeSqwPinMode	KEYWORD2
+setAlarm1	KEYWORD2
+setAlarm2	KEYWORD2
+isAlarmTrig	KEYWORD2
+setHourSystem	KEYWORD2
+setTime	KEYWORD2
+clearAlarm	KEYWORD2
+disable32k	KEYWORD2
+enable32k	KEYWORD2
+enableAlarm1Int	KEYWORD2
+disableAlarm1Int	KEYWORD2
+enableAlarm2Int	KEYWORD2
+disableAlarm2Int	KEYWORD2
+getAMorPM	KEYWORD2
+clearSRAM	KEYWORD2
+writeSRAM	KEYWORD2
+readSRAM	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+eSquareWave_OFF	LITERAL1
+eSquareWave_1Hz	LITERAL1
+eSquareWave_1kHz	LITERAL1
+eSquareWave_4kHz	LITERAL1
+eSquareWave_8kHz	LITERAL1
+eEverySecond	LITERAL1
+eSecondsMatch	LITERAL1
+eSecondsMinutesMatch	LITERAL1
+eSecondsMinutesHoursMatch	LITERAL1
+eSecondsMinutesHoursDateMatch	LITERAL1
+eSecondsMinutesHoursDayMatch	LITERAL1
+eUnknownAlarm1	LITERAL1
+eEveryMinute	LITERAL1
+eMinutesMatch	LITERAL1
+eMinutesHoursMatch	LITERAL1
+eMinutesHoursDateMatch	LITERAL1
+eMinutesHoursDayMatch	LITERAL1
+eUnknownAlarm2	LITERAL1
+e24hours	LITERAL1
+e12hours	LITERAL1
