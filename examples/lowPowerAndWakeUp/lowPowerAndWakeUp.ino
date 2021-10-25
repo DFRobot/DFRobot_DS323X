@@ -1,16 +1,17 @@
 /*!
- * @file lowPowerAndWakeUp.ino
- * @brief Set alarm, and use interrput pin to trigger MCU wake up
- * @n Experiment phenomenon: Set the alarm clock to trigger at a specified time.
- * @n                        Connect SQW pin with DIGITALPIN2.
- * @n                        Print information on serial port after the alarm clock is triggered.
- * @n                        This demo only works on avr
- * @copyright	Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
- * @author [LuoYufeng](yufeng.luo@dfrobot.com)
- * @version  V0.1
- * @date  2021-2-23
- * @url https://github.com/DFRobot/DFRobot_DS323X
+ * @file  lowPowerAndWakeUp.ino
+ * @brief  Set alarm, and use interrput pin to trigger MCU wake up
+ * @n  Experiment phenomenon: Set the alarm clock to trigger at a specified time.
+ * @n                         Connect SQW pin with DIGITALPIN2.
+ * @n                         Print information on serial port after the alarm clock is triggered.
+ * @n                         This demo only works on avr
+ * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+ * @license  The MIT License (MIT)
+ * @author  [yufeng](yufeng.luo@dfrobot.com)
+ * @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+ * @version  V1.0
+ * @date  2021-10-25
+ * @url  https://github.com/DFRobot/DFRobot_DS323X
  */
 #include "DFRobot_DS323X.h"
 #include <avr/sleep.h>

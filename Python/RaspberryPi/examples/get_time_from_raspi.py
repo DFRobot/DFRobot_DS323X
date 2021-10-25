@@ -1,17 +1,16 @@
 #-*- coding: utf-8 -*-
+'''!
+  @file  get_time_from_NTP.py
+  @brief  Get the accurate time from RaspbrrryPi:
+  @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+  @license  The MIT License (MIT)
+  @author  [LuoYufeng](yufeng.luo@dfrobot.com)
+  @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+  @version  V1.0
+  @date  2021-10-25
+  @url  https://github.com/DFRobot/DFRobot_DS323X
 '''
-@file get_time_from_NTP.py
-
-@brief Get the accurate time from RaspbrrryPi:
-
-@Copyright Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
-@licence   The MIT License (MIT)
-
-@author [LuoYufeng](yufeng.luo@dfrobot.com)
-@url https://github.com/DFRobot/DFRobot_DS323X
-@version  V1.0
-@date  2021-3-4
-'''
+from __future__ import print_function
 import sys
 sys.path.append('../')
 import time
@@ -26,12 +25,12 @@ while not rtc.begin():
     time.sleep(2)
 
 t_time = time.localtime()
-year = t_time.tm_year#Set year from NTP server
-month = t_time.tm_mon#Set the months from NTP server
-date = t_time.tm_mday#Set the dates from NTP server
-hour = t_time.tm_hour#Set the hours from NTP server
-minute = t_time.tm_min#Set the minutes from NTP server
-second = t_time.tm_sec#Set the seconds from NTP server
+year = t_time.tm_year  #Set year from NTP server
+month = t_time.tm_mon  #Set the months from NTP server
+date = t_time.tm_mday  #Set the dates from NTP server
+hour = t_time.tm_hour  #Set the hours from NTP server
+minute = t_time.tm_min #Set the minutes from NTP server
+second = t_time.tm_sec #Set the seconds from NTP server
 
 rtc.set_time(year, month, date, hour, minute, second)
 

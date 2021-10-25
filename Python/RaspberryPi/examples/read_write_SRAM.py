@@ -1,19 +1,18 @@
 #-*- coding: utf-8 -*-
+'''!
+  @file  get_time_and_temp.py
+  @brief  Through the example, you can read and write data on DS3232's SRAM
+  @n      Experiment phenomenon: There are 236 bytes of SRAM available for reading and writing 
+  @n                             The address of SRAM is 0x14~0xFF
+  @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+  @license  The MIT License (MIT)
+  @author  [LuoYufeng](yufeng.luo@dfrobot.com)
+  @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+  @version  V1.0
+  @date  2021-10-25
+  @url  https://github.com/DFRobot/DFRobot_DS323X
 '''
-@file get_time_and_temp.py
-
-@brief Through the example, you can read and write data on DS3232's SRAM
-@n     Experiment phenomenon: There are 236 bytes of SRAM available for reading and writing 
-@n                            The address of SRAM is 0x14~0xFF
-
-@Copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
-@licence   The MIT License (MIT)
-
-@author [LuoYufeng](yufeng.luo@dfrobot.com)
-@url https://github.com/DFRobot/DFRobot_DS323X
-@version  V1.0
-@date  2021-3-4
-'''
+from __future__ import print_function
 import sys
 sys.path.append('../')
 import time

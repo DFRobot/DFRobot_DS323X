@@ -1,17 +1,16 @@
 #-*- coding: utf-8 -*-
+'''!
+  @file  get_time_and_temp.py
+  @brief  Get the time and temperature of chip
+  @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+  @license  The MIT License (MIT)
+  @author  [LuoYufeng](yufeng.luo@dfrobot.com)
+  @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+  @version  V1.0
+  @date  2021-10-25
+  @url  https://github.com/DFRobot/DFRobot_DS323X
 '''
-@file get_time_and_temp.py
-
-@brief Get the time and temperature of chip
-
-@Copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
-@licence   The MIT License (MIT)
-
-@author [LuoYufeng](yufeng.luo@dfrobot.com)
-@url https://github.com/DFRobot/DFRobot_DS323X
-@version  V1.0
-@date  2021-3-4
-'''
+from __future__ import print_function
 import sys
 sys.path.append('../')
 import time
@@ -42,8 +41,16 @@ rtc.set_time(year=2021,month=2,date=28,hour=11,minute=59,second=55)
 
 def main():
     while True:
-        temp = rtc.get_temperature_C()
-        #temp = rtc.get_temperature_F()
+        '''
+        @brief get temperature of sensor
+        @param mode Select the sensor temperature measurement mode
+        @n true Enable temperature conversion to measure and obtain the current temperature immediately
+        @n false Disable temperature conversion and obtain the temperature measurement data within 64 seconds
+        @n       (the sensor measures the temperature every 64 seconds by default)
+        @return temperature, unit:℃
+        '''
+        temp = rtc.get_temperature_C(True)
+        #temp = rtc.get_temperature_F(True)
         if rtc.is_lost_power() == 1:
             print("RTC lost power, please reset the time!")
         print("{0}/{1}/{2},{3},{4}:{5}:{6} {7}".format(rtc.get_year(),rtc.get_month(),rtc.get_date(),\

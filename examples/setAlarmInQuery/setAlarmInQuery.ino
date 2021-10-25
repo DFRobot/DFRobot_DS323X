@@ -1,15 +1,15 @@
 /*!
- * @file setAlarmInQuery.ino
- * @brief Set alarm clock and trigger it in query
- * @n Experiment phenomenon: set the alarm clock to trigger at a sepcified time
- * @n           Trigger when the set time of clock is the same with the RTC time
- *
- * @copyright	Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
- * @author [LuoYufeng](yufeng.luo@dfrobot.com)
- * @version  V0.1
- * @date  2021-2-23
- * @url https://github.com/DFRobot/DFRobot_DS323X
+ * @file  setAlarmInQuery.ino
+ * @brief  Set alarm clock and trigger it in query
+ * @n  Experiment phenomenon: set the alarm clock to trigger at a sepcified time
+ * @n             Trigger when the set time of clock is the same with the RTC time
+ * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+ * @license  The MIT License (MIT)
+ * @author  [yufeng](yufeng.luo@dfrobot.com)
+ * @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+ * @version  V1.0
+ * @date  2021-10-25
+ * @url  https://github.com/DFRobot/DFRobot_DS323X
  */
 #include "DFRobot_DS323X.h"
 

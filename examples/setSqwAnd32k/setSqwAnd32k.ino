@@ -1,13 +1,13 @@
 /*!
- * @file setSqwAnd32k.ino
- * @brief Set the mode of pin sqw and 32k output
- *
- * @copyright	Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
- * @author [LuoYufeng](yufeng.luo@dfrobot.com)
- * @version  V0.1
- * @date  2021-2-23
- * @url https://github.com/DFRobot/DFRobot_DS323X
+ * @file  setSqwAnd32k.ino
+ * @brief  Set the mode of pin sqw and 32k output
+ * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+ * @license  The MIT License (MIT)
+ * @author  [yufeng](yufeng.luo@dfrobot.com)
+ * @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+ * @version  V1.0
+ * @date  2021-10-25
+ * @url  https://github.com/DFRobot/DFRobot_DS323X
  */
 #include "DFRobot_DS323X.h"
 

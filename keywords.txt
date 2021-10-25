@@ -1,5 +1,5 @@
 #######################################
-# Syntax Coloring DFRobot_CCS811
+# Syntax Coloring DFRobot_DS323X
 #######################################
 
 #######################################
@@ -66,3 +66,7 @@ eMinutesHoursDayMatch	LITERAL1
 eUnknownAlarm2	LITERAL1
 e24hours	LITERAL1
 e12hours	LITERAL1
+eNoTrigger	LITERAL1
+eAlarm1Trigger	LITERAL1
+eAlarm2Trigger	LITERAL1
+eAllTrigger	LITERAL1

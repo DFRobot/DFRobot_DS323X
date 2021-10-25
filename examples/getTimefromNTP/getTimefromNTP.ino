@@ -1,13 +1,13 @@
 /*!
- * @file getTimefromNTP.ino
- * @brief Get time from ntpServer and show current time ,only work on ESP32
- *
- * @copyright	Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
- * @author [LuoYufeng](yufeng.luo@dfrobot.com)
- * @version  V0.1
- * @date  2021-2-23
- * @url https://github.com/DFRobot/DFRobot_DS323X
+ * @file  getTimefromNTP.ino
+ * @brief  Get time from ntpServer and show current time ,only work on ESP32
+ * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+ * @license  The MIT License (MIT)
+ * @author  [yufeng](yufeng.luo@dfrobot.com)
+ * @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+ * @version  V1.0
+ * @date  2021-10-25
+ * @url  https://github.com/DFRobot/DFRobot_DS323X
  */
 #include "DFRobot_DS323X.h"
 #include <WiFi.h>
@@ -30,8 +30,9 @@ void getTimeFromNTP()
         Serial.println("Failed to obtain time");
         return;
     }
-    rtc.setTime(timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday, timeinfo.tm_hour,timeinfo.tm_min,timeinfo.tm_sec);//Set Set initial time .
-    
+    // Serial.println(&timeinfo, "%A, %B %d %Y %H:%M:%S");
+    // Set Set initial time.Due to network and program running delays, 2 seconds were added to the obtained network time as delay compensation when setting.
+    rtc.setTime(timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday, timeinfo.tm_hour, timeinfo.tm_min, timeinfo.tm_sec + 2);
 }
 
 void setup()

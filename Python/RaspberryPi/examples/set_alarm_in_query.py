@@ -1,17 +1,16 @@
 #-*- coding: utf-8 -*-
+'''!
+  @file  set_alarm_in_query.py
+  @brief  Set alarm clock and trigger in query
+  @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+  @license  The MIT License (MIT)
+  @author  [LuoYufeng](yufeng.luo@dfrobot.com)
+  @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+  @version  V1.0
+  @date  2021-10-25
+  @url  https://github.com/DFRobot/DFRobot_DS323X
 '''
-file set_alarm_in_query.py
-
-@brief Set alarm clock and trigger in query
-
-@Copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
-@licence   The MIT License (MIT)
-
-@author [LuoYufeng](yufeng.luo@dfrobot.com)
-@url https://github.com/DFRobot/DFRobot_DS323X
-@version  V1.0
-@date  2021-3-4
-'''
+from __future__ import print_function
 import sys
 sys.path.append('../')
 import time

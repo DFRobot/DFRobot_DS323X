@@ -1,14 +1,15 @@
 /*!
- * @file getTimeAndTemperature.ino
- * @brief Show current time and temperature of chip
- * @n Experiment phenomenon: Set original time by users themselves and get real time and temperature from the chip
- *
- * @copyright	Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
- * @author [LuoYufeng](yufeng.luo@dfrobot.com)
- * @version  V0.1
- * @date  2021-2-23
- * @url https://github.com/DFRobot/DFRobot_DS323X
+ * @file  getTimeAndTemperature.ino
+ * @brief  Show current time and temperature of chip
+ * @n  Experiment phenomenon: Set original time by users themselves 
+ * @n  and get real time and temperature from the chip
+ * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+ * @license  The MIT License (MIT)
+ * @author  [yufeng](yufeng.luo@dfrobot.com)
+ * @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+ * @version  V1.0
+ * @date  2021-10-25
+ * @url  https://github.com/DFRobot/DFRobot_DS323X
  */
 #include "DFRobot_DS323X.h"
 
@@ -52,10 +53,14 @@ void loop() {
     Serial.println();
     Serial.print("Temperature: ");
     /*!
-     *@brief Get current temperature
-     *@return Current temperautre, unit: ℃ 
+     *@brief Get sensor temperature
+     *@param mode Select the sensor temperature measurement mode, default is false
+     *@n true Enable temperature conversion to measure and obtain the current temperature immediately
+     *@n false Disable temperature conversion and obtain the temperature measurement data within 64 seconds
+     *@n       (the sensor measures the temperature every 64 seconds by default)
+     *@return Sensor temperautre, unit: ℃ 
      */
-    Serial.print(rtc.getTemperatureC());
+    Serial.print(rtc.getTemperatureC(true));
     Serial.println(" C");
     delay(1000);
 

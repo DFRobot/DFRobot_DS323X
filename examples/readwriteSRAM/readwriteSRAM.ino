@@ -1,15 +1,15 @@
 /*!
- * @file readWriteSRAM.ino
- * @brief read and write data in SRAM, only work on DS3232 
- * @n Experiment phenomenon: There are 236 bytes of SRAM available for reading and writing 
- * @n                        The address of SRAM is 0x14~0xFF
- *
- * @copyright	Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
- * @licence     The MIT License (MIT)
- * @author [LuoYufeng](yufeng.luo@dfrobot.com)
- * @version  V0.1
- * @date  2021-2-23
- * @url https://github.com/DFRobot/DFRobot_DS323X
+ * @file  readWriteSRAM.ino
+ * @brief  read and write data in SRAM, only work on DS3232 
+ * @n  Experiment phenomenon: There are 236 bytes of SRAM available for reading and writing 
+ * @n                         The address of SRAM is 0x14~0xFF
+ * @copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+ * @license  The MIT License (MIT)
+ * @author  [yufeng](yufeng.luo@dfrobot.com)
+ * @maintainer  [qsjhyy](yihuan.huang@dfrobot.com)
+ * @version  V1.0
+ * @date  2021-10-25
+ * @url  https://github.com/DFRobot/DFRobot_DS323X
  */
 #include "DFRobot_DS323X.h"
 
@@ -20,7 +20,7 @@ int i = 0;
 void setup(void)
 {
     Serial.begin(9600);
-    /*Wait for the chip to be initialized completely, and then exit*/
+    /* Wait for the chip to be initialized completely, and then exit */
     while(rtc.begin() != true){
         Serial.println("Failed to init chip, please check if the chip connection is fine. ");
         delay(1000);
