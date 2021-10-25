@@ -260,7 +260,7 @@ To use the library, first download the library file, paste it into the specified
 
 | Python  | Work Well | Work Wrong | Untested | Remarks |
 | ------- | :-------: | :--------: | :------: | ------- |
-| Python2 |           |            |     √    |         |
+| Python2 |     √     |            |          |         |
 | Python3 |     √     |            |          |         |
 
 
