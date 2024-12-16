@@ -381,7 +381,7 @@ protected:
      * @param val Input BCD code
      * @return Return BIN code
      */
-    static uint8_t bcd2bin(uint8_t val);
+    uint8_t bcd2bin(uint8_t val);
 
     /**
      * @fn bin2bcd(uint8_t val)
@@ -389,7 +389,7 @@ protected:
      * @param val Input BIN code
      * @return Return BCD code
      */
-    static uint8_t bin2bcd(uint8_t val);
+    uint8_t bin2bcd(uint8_t val);
 
     uint8_t y,    ///< Year Offset
             m,    ///< Months

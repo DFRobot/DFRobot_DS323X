@@ -49,12 +49,12 @@ bool DFRobot_DS323X::begin(void)
     }
 }
 
-static uint8_t DFRobot_DS323X::bcd2bin(uint8_t val)
+uint8_t DFRobot_DS323X::bcd2bin(uint8_t val)
 {
     return val - 6 * (val >> 4);
 }
 
-static uint8_t DFRobot_DS323X::bin2bcd (uint8_t val)
+uint8_t DFRobot_DS323X::bin2bcd (uint8_t val)
 {
     return val + 6 * (val / 10);
 }
